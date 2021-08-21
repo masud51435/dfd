@@ -30,7 +30,7 @@ function deliveryCost(isIncreasingValue) {
   allPrice()
 }
 
-////////////////////////////  all cost   ////////////////////////////////////
+////////////////////////////  all price   ////////////////////////////////////
 function allPrice() {
   const bestPrice = document.getElementById('best-price');
   const setPrice = bestPrice.innerText;
