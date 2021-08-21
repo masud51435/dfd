@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--------------------------------------- 
+    bootstap cdn 
+  ---------------------------------------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="container">
+    <div class="row d-flex justify-content-between align-items-top">
+      <!--------------------------------------------
+         img area  
+      --------------------------------------------->
+      <div class="col-lg-6">
+        <img class="img-fluid" src="images/mac.png" alt="">
+      </div>
+      <!------------------------------------------
+         description area  
+      ------------------------------------------->
+      <div class="col-lg-6">
+        <div>
+          <h1>Customize your blue 24-inch iMac with Apple M1 cheap</h1>
+          <p>The M1 chip brings the Apple Neural Engine to the Mac, greatly accelerating machine learning (ML) tasks.
+            Featuring Apple’s most advanced 16-core architecture capable of 11 trillion operations per second, the
+            Neural Engine in M1 enables up to 15x faster machine learning performance.</p>
+        </div>
+        <!-----------------------------------------
+           memory area  
+        ------------------------------------------>
+        <div class="my-5">
+          <h5>Memory</h5>
+          <button id="8gb-memory" class="btn btn-outline-dark">8 GB unified memory</button>
+          <button id="16gb-memory" class="btn btn-outline-dark">16 GB unified memory</button>
+        </div>
+        <!---------------------------------------
+           storage area 
+        ---------------------------------------->
+        <div class="my-5">
+          <h5>Storage</h5>
+          <button id="256gb-ssd" class="btn btn-outline-dark">256 GB SSD storage</button>
+          <button id="512gb-ssd" class="btn btn-outline-dark">512 GB SSD storage</button>
+          <button id="1tb-ssd" class="btn btn-outline-dark">1 TB SSD storage</button>
+        </div>
+        <!------------------------------------
+           delivery area  
+         ------------------------------------>
+        <div class="my-5">
+          <h5>Choose your delivery option</h5>
+          <button id="free-delivery" class="btn btn-outline-dark">Thursday,Aug 25 free prime delivery</button>
+          <button id="Delivery-charge" class="btn btn-outline-dark">Friday,Aug 21 delivery charge $20</button>
+        </div>
+        <!------------------------------------
+         table area  
+        ------------------------------------->
+        <div class="mt-5 mb-3 fw-bold">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Best price</td>
+                <td>$<span id="best-price">1299</span> </td>
+              </tr>
+              <tr>
+                <td>Extra memory cost</td>
+                <td>$<span id="memory-cost">0</span> </td>
+              </tr>
+              <tr>
+                <td>Extra storage cost</td>
+                <td>$<span id="storage-cost">0</span> </td>
+              </tr>
+              <tr>
+                <td>Delivery charge</td>
+                <td>$<span id="shipment-cost">0</span></td>
+              </tr>
+              <tr>
+                <td>Total price</td>
+                <td>$<span id="total-price">1299</span> </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-----------------------------------------
+           cupon area  
+        ------------------------------------------>
+        <div>
+          <input id="input-field" type="text">
+          <button id="cupon-btn" onclick="cuponArea()" class="btn btn-danger">Apply</button>
+        </div>
+      </div>
+    </div>
+    <!-----------------------------------------------
+       offer price  
+    ------------------------------------------------>
+    <div class="col-lg-12">
+      <hr>
+      <h1 class="text-center">Total: $<span id="total">1299</span> </h1>
+    </div>
+  </section>
+  <!-------------------------------------------------
+     js area  
+  -------------------------------------------------->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
